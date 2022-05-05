@@ -1,5 +1,6 @@
 {
   "debug": true,
   "publicToken": "REPLACE_ME",
-  "enableOnFirstRun": true
+  "enableOnFirstRun": true,
+  "automaticallyAskLocationPermission": true
 }

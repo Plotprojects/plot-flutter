@@ -1,32 +1,20 @@
-# Plot Projects Flutter Example
+# plot_flutter
 
-This example shows a Plot Projects integration into Flutter. In this example, we did all the required steps from the plugin integration guide. If you want to know more about the Plot Projects plugin, go to [the Plot Projects website](https://www.plotprojects.com).
+A new Flutter project with PlotProjects plugin integrated.
 
-This guide assumes you have access to [our dashboard](https://admin.plotprojects.com/) and you have a public token. Otherwise, [contact sales](https://content.plotprojects.com/schedule-demo/) for a demo and more information. More information about integrating the Plot Plugin into your Flutter app is in the [integration section of our documentation](https://www.plotprojects.com/documentation/#flutter_integrate).
+## Getting Started
 
-## Getting started with this example for iOS
+This project is a starting point for a Flutter application with PlotProjects plugin integrated.
 
-Open the terminal and navigate to the IOS subdirectory and install the Cocoapods dependencies. If you don't have Cocoapods installed, you can install it from [their website](https://cocoapods.org/). Cocoapods now downloads all the required dependencies.
+Before you can run this project, you need to add your plotProjects token to `plotconfig.json` files in both 
+Android `android/app/src/main/assets/plotconfig.json` and iOS `ios/Runner/plotconfig.json` projects
 
-The terminal commands may look like this:
-```
-cd plot_projects_flutter/ios
-pod install --repo-update
-```
+A few resources to get you started if this is your first Flutter project:
 
-Then insert your public token into the config file. The file location is `ios/Runner/plotconfig.json`.
+- [PlotProjects documentation](https://files.plotprojects.com/documentation)
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-The example is now ready for use.
-
-## Getting started with this example for Android
-
-Insert your public token into the config file. The file location is `android/app/src/main/assets/plotconfig.json`. The Gradle build script automatically downloads all the required dependencies.
-
-The example is now ready for use.
-
-## Links
-
-* [Plot Projects website](https://www.plotprojects.com)
-* [Plugin Documentation](https://www.plotprojects.com/documentation)
-* [Schedule a demo](https://content.plotprojects.com/schedule-demo/)
-* [Flutter](https://flutter.io/)
+For help getting started with Flutter, view
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

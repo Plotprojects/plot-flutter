@@ -6,16 +6,14 @@ import PlotProjects
 @objc class AppDelegate: FlutterAppDelegate, PlotDelegate {
   override func application(
     _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
-    
     #if DEBUG
-    PlotDebug.initialize(launchOptions: launchOptions, delegate: self)
+      PlotDebug.initialize(with: self)
     #else
-    PlotRelease.initialize(launchOptions: launchOptions, delegate: self)
+      PlotRelease.initialize(with: self)
     #endif
-    
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
